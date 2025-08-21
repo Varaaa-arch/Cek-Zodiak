@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cek Zodiak Kamu</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background: rgba(0,0,0,0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #fff;
+    }
+
+    .container {
+        background: rgba(0,0,0,0.7);
+        padding: 40px 40px;
+        border-radius: 15px;
+        text-align: center;
+        width: 400px;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px; 
+        text-align: center;
+        text-align: left;
+    }
+
+    input[type="number"] {
+        padding: 8px;
+        border-radius: 6px;
+        border: none;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    input[type="submit"] {
+        margin-top: 25px; /* jarak dari input terakhir */
+        padding: 10px 25px;
+        border: none;
+        border-radius: 12px;
+        background-color: #ff9800;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #e68900;
+    }
+
+    .result {
+        margin-top: 25px;
+        background: rgba(255,255,255,0.2);
+        padding: 15px;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Ayo Kita Cek Zodiak Mu</h2>
+    <form id="zodiakForm">
+        <div class="form-group">
+            <label for="tanggal">Masukin Tanggal Lahir</label>
+            <input type="number" id="tanggal" name="tanggal" min="1" max="31" required>
+        </div>
+
+        <div class="form-group">
+            <label for="bulan">Masukin Bulan Lahir</label>
+            <input type="number" id="bulan" name="bulan" min="1" max="12" required>
+        </div>
+
+        <input type="submit" value="Cek Zodiak">
+    </form>
+
+    <div class="result" id="result">
+        <!-- Hasil zodiak muncul di sini nanti -->
+    </div>
+</div>
+</body>
+</html>
