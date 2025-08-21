@@ -13,7 +13,7 @@
 
     body {
         font-family: 'Arial', sans-serif;
-        background: rgba(0,0,0,0.7);
+        background: rgba(0,0,0,1);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -22,7 +22,6 @@
     }
 
     .container {
-        background: rgba(0,0,0,0.7);
         padding: 40px 40px;
         border-radius: 15px;
         text-align: center;
@@ -149,7 +148,7 @@
                     "Virgo"=>"Perfeksionis, analitis, rapi",
                     "Libra"=>"Adil, diplomatis, sosial",
                     "Scorpio"=>"Intens, misterius, fokus",
-                    "Sagittarius"=>"Optimis, petualang, bebas"
+                    "Sagitarius"=>"Optimis, petualang, bebas"
                 ];
 
                 if (isset($deksripsi[$zodiak])) {
